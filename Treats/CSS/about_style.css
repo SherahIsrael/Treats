@@ -1,0 +1,97 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: pink;
+}
+
+/* Navigation */
+.logo {
+    height: 70px;
+    width: 70px;
+    float: left;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(241, 148, 163);
+}
+
+.nav ul li {
+    float: left;
+    list-style: none;
+    margin: 20px 17px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    padding: 3px;
+    color:aliceblue;
+}
+
+.nav a:hover {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+/* title */
+.title {
+    background-image: url(/images/about.png);
+    background-size: contain;
+    background-position: center;
+    width: 50%;
+    margin: auto;
+    height: 290px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.title p {
+    font-size: large;
+    margin-bottom: 20px;
+    color: purple;
+}
+
+/* Content */
+
+.content {
+    text-align: center;
+    width:90%;
+    margin: auto;
+    padding: 30px;
+    background-color: aliceblue;
+    border: 2px solid rgb(241, 148, 163);
+    transition: 2s;
+    border-radius: 15px;
+    box-shadow: 15px 10px rgba(241, 148, 163, 0.6);
+    color: purple;
+}
+
+p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: large;
+    line-height:130%;
+}
+
+/* Footer */
+
+.footer {
+    padding: 20px;
+    margin-top: 50px;
+    background-color: rgb(241, 148, 163);
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
