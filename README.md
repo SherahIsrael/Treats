@@ -35,7 +35,7 @@ Menu Page:
 - CSS
 - Flexbox
 - Parallax
-- Desktop-first workflow
+- Mobile-first workflow
 - JavaScript
 
 ## Author 
