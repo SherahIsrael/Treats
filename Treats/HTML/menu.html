@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="/CSS/menu_style.css">
     <title>Menu</title>
 </head>
@@ -21,7 +22,7 @@
         <p>Please explore our range of food and drinks.</p>
     </div>
     <br>
-    
+
     <!-- Cupcake Section -->
     <div id="cupcake">
         <h2>Cupcakes</h2>
@@ -29,53 +30,318 @@
             <div class="cupcake-items">
                 <img src="/images/caramel_cupcake.png" alt="caramel cupcake">
                 <h3>Caramel Cupcake</h3>
-                <p>Price: £5</p>
-                <button>Info</button>
+                <p>Price: £2.50</p>
+                <button type="button" onclick="show('cupcake1')">Info</button>
             </div>
             <div class="cupcake-items">
                 <img src="/images/redvelvet_cupcake.png" alt="red velvet cupcake">
                 <h3>Red Velvet Cupcake</h3>
-                <p>Price: £5</p>
-                <button>Info</button>
+                <p>Price: £2.50</p>
+                <button type="button" onclick="show('cupcake2')">Info</button>
             </div>
             <div class="cupcake-items">
                 <img src="/images/carrot_cupcake.png" alt="carrot cupcake">
                 <h3>Carrot Cupcake</h3>
-                <p>Price: £5</p>
-                <button>Info</button>
+                <p>Price: £3.50</p>
+                <button type="button" onclick="show('cupcake3')">Info</button>
             </div>
             <div class="cupcake-items">
                 <img src="/images/choco_cupcake.png" alt="chocolate cupcake">
                 <h3>Chocolate Cupcake</h3>
-                <p>Price: £5</p>
-                <button>Info</button>
+                <p>Price: £3.50</p>
+                <button type="button" onclick="show('cupcake4')">Info</button>
             </div>
             <div class="cupcake-items">
                 <img src="/images/coffee_cupcake.png" alt="coffee cupcake">
                 <h3>Coffee Cupcake</h3>
-                <p>Price: £5</p>
-                <button>Info</button>
+                <p>Price: £3.50</p>
+                <button type="button" onclick="show('cupcake5')">Info</button>
             </div>
             <div class="cupcake-items">
                 <img src="/images/chocolate_cupcake.png" alt="mint chocolate cupcake">
                 <h3>Mint Chocolate Cupcake</h3>
-                <p>Price: £5</p>
-                <button>Info</button>
+                <p>Price: £3.50</p>
+                <button type="button" onclick="show('cupcake6')">Info</button>
             </div>
             <div class="cupcake-items">
                 <img src="/images/strawberry_cupcake.png" alt="strawberry cupcake">
                 <h3>Strawberry Cupcake</h3>
-                <p>Price: £5</p>
-                <button>Info</button>
+                <p>Price: £3.50</p>
+                <button type="button" onclick="show('cupcake7')">Info</button>
             </div>
             <div class="cupcake-items">
                 <img src="/images/blueberry_cupcake.png" alt="blueberry cupcake">
                 <h3>Blueberry Cupcake</h3>
-                <p>Price: £5</p>
-                <button>Info</button>
+                <p>Price: £2.50</p>
+                <button type="button" onclick="show('cupcake8')">Info</button>
             </div>
         </div>
     </div>
+
+    <!-- Caramel Cupcake Modal -->
+    <div class="modal" id="cupcake1" onclick="if(event.target==cupcake1){hide('cupcake1');}">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="hide('cupcake1')">&times;</span>
+            <div class="product"><img src="/images/caramel_cupcake.png" alt="caramel cupcake"></div> 
+            <div class="product_info">
+                <h2>Caramel Cupcake</h2>
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>All-Purpose Flour</li>
+                    <li>Baking Powder</li>
+                    <li>Salt</li>
+                    <li>Unsalted Butter</li>
+                    <li>Sugar</li>
+                    <li>Eggs</li>
+                    <li>Vanilla Extract</li>
+                    <li>Milk</li>
+                    <li>Caramel Sauce</li>
+                </ul>
+                <h3>Nutritional Information (per cupcake, without frosting, approximately):</h3>
+                <ul>
+                    <li>Calories: 200 - 220</li>
+                    <li>Total Fat: 9g - 11g</li>
+                    <li>Carbohydrates: 28g - 32g</li>
+                    <li>Protein: 3g - 4g</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    
+    
+        <!-- Red Velvet Cupcake Modal -->
+        <div class="modal" id="cupcake2" onclick="if(event.target==cupcake2){hide('cupcake2');}">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="hide('cupcake2')">&times;</span>
+                <div class="product"><img src="/images/redvelvet_cupcake.png" alt="red velvet cupcake"></div> 
+                <div class="product_info">
+                    <h2>Red Velvet</h2>
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>All-Purpose Flour</li>
+                        <li>Baking Soda</li>
+                        <li>Baking Powder</li>
+                        <li>Salt</li>
+                        <li>Unsalted Butter</li>
+                        <li>Sugar</li>
+                        <li>Eggs</li>
+                        <li>Vanilla Extract</li>
+                        <li>Cocoa Powder</li>
+                        <li>Buttermilk</li>
+                        <li>Red Food Colouring</li>
+                        <li>White Vinegar</li>
+                    </ul>
+                    <h3>Nutritional Information (per cupcake, without frosting, approximately):</h3>
+                    <ul>
+                        <li>Calories: 180 - 200</li>
+                        <li>Total Fat: 9g - 11g</li>
+                        <li>Carbohydrates: 23g - 27g</li>
+                        <li>Protein: 3g - 4g</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            
+            <!-- Carrot Cupcake Modal -->
+            <div class="modal" id="cupcake3" onclick="if(event.target==cupcake3){hide('cupcake3');}">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="hide('cupcake3')">&times;</span>
+                <div class="product"><img src="/images/carrot_cupcake.png" alt="carrot cupcake"></div> 
+                <div class="product_info">
+                    <h2>Carrot Cupcake</h2>
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>All-Purpose Flour</li>
+                        <li>Baking Soda</li>
+                        <li>Baking Powder</li>
+                        <li>Salt</li>
+                        <li>Vegetable Oil</li>
+                        <li>Sugar</li>
+                        <li>Eggs</li>
+                        <li>Ground Cinnamon</li>
+                        <li>Ground Nutmeg</li>
+                        <li>Grated Carrots</li>
+                        <li>Crushed Pineapple</li>
+                        <li>Cream Cheese Frosting</li>
+                    </ul>
+                    <h3>Nutritional Information (per cupcake, without frosting, approximately):</h3>
+                    <ul>
+                        <li>Calories: 180 - 200</li>
+                        <li>Total Fat: 9g - 11g</li>
+                        <li>Carbohydrates: 24g - 28g</li>
+                        <li>Protein: 2g - 3g</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+    
+    <!-- Chocolate Cupcake Modal -->
+    <div class="modal" id="cupcake4" onclick="if(event.target==cupcake4){hide('cupcake4');}">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close" onclick="hide('cupcake4')">&times;</span>
+        <div class="product"><img src="/images/choco_cupcake.png" alt="chocolate cupcake"></div> 
+        <div class="product_info">
+            <h2>Chocolate Cupcake</h2>
+            <h3>Ingredients</h3>
+            <ul>
+                <li>All-Purpose Flour</li>
+                <li>Baking Soda</li>
+                <li>Baking Powder</li>
+                <li>Salt</li>
+                <li>Unsalted Butter</li>
+                <li>Sugar</li>
+                <li>Eggs</li>
+                <li>Vanilla Extract</li>
+                <li>Cocoa Powder</li>
+                <li>Milk</li>
+                <li>Chocolate Chips</li>
+                <li>White Chocolate Chips</li>
+            </ul>
+            <h3>Nutritional Information (per cupcake, without frosting, approximately):</h3>
+            <ul>
+                <li>Calories: 200 - 220</li>
+                <li>Total Fat: 10g - 12g</li>
+                <li>Carbohydrates: 26g - 30g</li>
+                <li>Protein: 3g - 4g</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+     <!-- Coffee Cupcake Modal -->
+     <div class="modal" id="cupcake5" onclick="if(event.target==cupcake5){hide('cupcake5');}">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="hide('cupcake5')">&times;</span>
+            <div class="product"><img src="/images/coffee_cupcake.png" alt="coffee cupcake"></div> 
+            <div class="product_info">
+                <h2>Coffee Cupcake</h2>
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>All-Purpose Flour</li>
+                    <li>Baking Soda</li>
+                    <li>Baking Powder</li>
+                    <li>Salt</li>
+                    <li>Unsalted Butter</li>
+                    <li>Sugar</li>
+                    <li>Eggs</li>
+                    <li>Instant Coffee</li>
+                    <li>Espresso Powder</li>
+                    <li>Milk</li>
+                    <li>Vanilla Extract</li>
+                </ul>
+                <h3>Nutritional Information (per cupcake, without frosting, approximately):</h3>
+                <ul>
+                    <li>Calories: 160 - 180</li>
+                    <li>Total Fat: 8g - 9g</li>
+                    <li>Carbohydrates: 20g - 22g</li>
+                    <li>Protein: 2g - 3g</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+         <!-- Mint Chocolate Cupcake Modal -->
+         <div class="modal" id="cupcake6" onclick="if(event.target==cupcake6){hide('cupcake6');}">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="hide('cupcake6')">&times;</span>
+                <div class="product"><img src="/images/chocolate_cupcake.png" alt="mint chocolate cupcake"></div> 
+                <div class="product_info">
+                    <h2>Mint Chocolate Cupcake</h2>
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>All-Purpose Flour</li>
+                        <li>Baking Soda</li>
+                        <li>Baking Powder</li>
+                        <li>Salt</li>
+                        <li>Cocoa Powder</li>
+                        <li>Sugar</li>
+                        <li>Eggs</li>
+                        <li>Unsalted Butter</li>
+                        <li>Vanilla Extract</li>
+                        <li>Peppermint Extract</li>
+                        <li>Mint</li>
+                        <li>Chocolate Chips</li>
+                    </ul>
+                    <h3>Nutritional Information (per cupcake, without frosting, approximately):</h3>
+                    <ul>
+                        <li>Calories: 200 - 220</li>
+                        <li>Total Fat: 10g - 12g</li>
+                        <li>Carbohydrates: 26g - 30g</li>
+                        <li>Protein: 3g - 4g</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+
+         <!-- Strawberry Cupcake Modal -->
+         <div class="modal" id="cupcake7" onclick="if(event.target==cupcake7){hide('cupcake7');}">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="hide('cupcake7')">&times;</span>
+                <div class="product"><img src="/images/strawberry_cupcake.png" alt="strawberry cupcake"></div> 
+                <div class="product_info">
+                    <h2>Strawberry Cupcake</h2>
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>All-Purpose Flour</li>
+                        <li>Unsalted Butter</li>
+                        <li>Baking Powder</li>
+                        <li>Salt</li>
+                        <li>Sugar</li>
+                        <li>Eggs</li>
+                        <li>Vanilla Extract</li>
+                        <li>Milk</li>
+                        <li>Strawberries</li>
+                        <li>Pink food colouring</li>
+                    </ul>
+                    <h3>Nutritional Information (per cupcake, without frosting, approximately):</h3>
+                    <ul>
+                        <li>Calories: 150 - 170</li>
+                        <li>Total Fat: 7g - 8g</li>
+                        <li>Carbohydrates: 20g - 22g</li>
+                        <li>Protein: 2g - 3g</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+
+         <!-- Blueberry Cupcake Modal -->
+         <div class="modal" id="cupcake8" onclick="if(event.target==cupcake8){hide('cupcake8');}">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="hide('cupcake8')">&times;</span>
+                <div class="product"><img src="/images/blueberry_cupcake.png" alt="blueberry cupcake"></div> 
+                <div class="product_info">
+                    <h2>Blueberry Cupcake</h2>
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>All-Purpose Flour</li>
+                        <li>Baking Powder</li>
+                        <li>Salt</li>
+                        <li>Unsalted Butter</li>
+                        <li>Sugar</li>
+                        <li>Eggs</li>
+                        <li>Vanilla Extract</li>
+                        <li>Ground Nutmeg</li>
+                        <li>Milk</li>
+                        <li>Blueberries</li>
+                    </ul>
+                    <h3>Nutritional Information (per cupcake, without frosting, approximately):</h3>
+                    <ul>
+                        <li>Calories: 180 - 200</li>
+                        <li>Total Fat: 9g - 11g</li>
+                        <li>Carbohydrates: 23g - 27g</li>
+                        <li>Protein: 3g - 4g</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
     
     <!-- Cake Section -->
     <div id="cake">
@@ -84,53 +350,294 @@
             <div class="cake-items">
                 <img src="/images/banana_cake.png" alt="banana cake">
                 <h3>Banana Cake</h3>
-                <p>Price: £5</p>
-                <button>Info</button>
+                <p>Price: £8</p>
+                <button type="button" onclick="show('cake1')">Info</button>
             </div>
             <div class="cake-items">
                 <img src="/images/carrot_cake.png" alt="carrot cake">
                 <h3>Carrot Cake</h3>
-                <p>Price: £5</p>
-                <button>Info</button>
+                <p>Price: £8</p>
+                <button type="button" onclick="show('cake2')">Info</button>
             </div>
             <div class="cake-items">
                 <img src="/images/chocolate_cake.png" alt="chocolate cake">
                 <h3>Chocolate Cake</h3>
-                <p>Price: £5</p>
-                <button>Info</button>
+                <p>Price: £10</p>
+                <button type="button" onclick="show('cake3')">Info</button>
             </div>
             <div class="cake-items">
                 <img src="/images/lemon_cake.png" alt="lemon cake">
                 <h3>Lemon Cake</h3>
-                <p>Price: £5</p>
-                <button>Info</button>
+                <p>Price: £12.50</p>
+                <button type="button" onclick="show('cake4')">Info</button>
             </div>
             <div class="cake-items">
                 <img src="/images/redvelvet_cake.png" alt="red velvet cake">
                 <h3>Red Velvet Cake</h3>
-                <p>Price: £5</p>
-                <button>Info</button>
+                <p>Price: £10</p>
+                <button type="button" onclick="show('cake5')">Info</button>
             </div>
             <div class="cake-items">
                 <img src="/images/vanilla_cake.png" alt="vanilla cake">
                 <h3>Vanilla Cake</h3>
-                <p>Price: £5</p>
-                <button>Info</button>
+                <p>Price: £8</p>
+                <button type="button" onclick="show('cake6')">Info</button>
             </div>
             <div class="cake-items">
                 <img src="/images/caramel_cheesecake.png" alt="caramel cheesecake">
                 <h3>Caramel Cheesecake</h3>
-                <p>Price: £5</p>
-                <button>Info</button>
+                <p>Price: £15</p>
+                <button type="button" onclick="show('cake7')">Info</button>
             </div>
             <div class="cake-items">
                 <img src="/images/strawberry_cheesecake.png" alt="strawberry cheesecake">
                 <h3>Strawberry Cheesecake</h3>
-                <p>Price: £5</p>
-                <button>Info</button>
+                <p>Price: £15</p>
+                <button type="button" onclick="show('cake8')">Info</button>
             </div>
         </div>
     </div>
+    
+    <!-- Banana Cake Modal -->
+    <div class="modal" id="cake1" onclick="if(event.target==cake1){hide('cake1');}">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="hide('cake1')">&times;</span>
+            <div class="product"><img src="/images/banana_cake.png" alt="banana cake"></div> 
+            <div class="product_info">
+                <h2>Banana Cake</h2>
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>Flour</li>
+                    <li>Bananas</li>
+                    <li>Vegetable Oil</li>
+                    <li>Baking Powder</li>
+                    <li>Sugar</li>
+                    <li>Eggs</li>
+                    <li>Vanilla Extract</li>
+                </ul>
+                <h3>Nutritional Information (per serving, approximately):</h3>
+                <ul>
+                    <li>Calories: 350 - 400</li>
+                    <li>Total Fat: 15g - 20g</li>
+                    <li>Carbohydrates: 50g - 60g</li>
+                    <li>Protein: 5g - 8g</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+    <!-- Carrot Cake Modal -->
+    <div class="modal" id="cake2" onclick="if(event.target==cake2){hide('cake2');}">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="hide('cake2')">&times;</span>
+            <div class="product"><img src="/images/carrot_cake.png" alt="carrot cake"></div> 
+            <div class="product_info">
+                <h2>Carrot Cake</h2>
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>Flour</li>
+                    <li>Carrots</li>
+                    <li>Vegetable Oil</li>
+                    <li>Baking Powder</li>
+                    <li>Sugar</li>
+                    <li>Eggs</li>
+                    <li>Cinnamon</li>
+                    <li>Vanilla Extract</li>
+                    <li>Optional: Walnuts</li>
+                    <li>Cream Cheese Frosting</li>
+                </ul>
+                <h3>Nutritional Information (per serving, approximately):</h3>
+                <ul>
+                    <li>Calories: 400 - 450</li>
+                    <li>Total Fat: 20g - 25g</li>
+                    <li>Carbohydrates: 50g - 60g</li>
+                    <li>Protein: 5g - 8g</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+    <!-- Chocolate Cake Modal -->
+    <div class="modal" id="cake3" onclick="if(event.target==cake3){hide('cake3');}">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="hide('cake3')">&times;</span>
+            <div class="product"><img src="/images/chocolate_cake.png" alt="chocolate cake"></div> 
+            <div class="product_info">
+                <h2>Chocolate Cake</h2>
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>Flour</li>
+                    <li>Baking Powder</li>
+                    <li>Cocoa Powder</li>
+                    <li>Milk</li>
+                    <li>Sugar</li>
+                    <li>Eggs</li>
+                    <li>Vegetable Oil</li>
+                    <li>Vanilla Extract</li>
+                </ul>
+                <h3>Nutritional Information (per serving, approximately):</h3>
+                <ul>
+                    <li>Calories: 350 - 400</li>
+                    <li>Total Fat: 15g - 20g</li>
+                    <li>Carbohydrates: 50g - 60g</li>
+                    <li>Protein: 5g - 8g</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+    <!-- Lemon Cake Modal -->
+    <div class="modal" id="cake4" onclick="if(event.target==cake4){hide('cake4');}">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="hide('cake4')">&times;</span>
+            <div class="product"><img src="/images/lemon_cake.png" alt="lemon cake"></div> 
+            <div class="product_info">
+                <h2>Lemon Cake</h2>
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>Flour</li>
+                    <li>Baking Powder</li>
+                    <li>Lemon Zest</li>
+                    <li>Butter</li>
+                    <li>Sugar</li>
+                    <li>Eggs</li>
+                    <li>Vanilla Extract</li>
+                    <li>Lemon Juice</li>
+                    <li>Milk</li>
+                </ul>
+                <h3>Nutritional Information (per serving, approximately):</h3>
+                <ul>
+                    <li>Calories: 300 - 350</li>
+                    <li>Total Fat: 12g - 15g</li>
+                    <li>Carbohydrates: 40g - 50g</li>
+                    <li>Protein: 4g - 6g</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+    <!-- Red Velvet Cake Modal -->
+    <div class="modal" id="cake5" onclick="if(event.target==cake5){hide('cake5');}">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="hide('cake5')">&times;</span>
+            <div class="product"><img src="/images/redvelvet_cake.png" alt="red velvet cake"></div> 
+            <div class="product_info">
+                <h2>Red Velvet Cake</h2>
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>Flour</li>
+                    <li>Baking Powder</li>
+                    <li>Cocoa Powder</li>
+                    <li>Buttermilk</li>
+                    <li>Sugar</li>
+                    <li>Eggs</li>
+                    <li>Vanilla Extract</li>
+                    <li>Red Food Colouring</li>
+                    <li>Vinegar</li>
+                </ul>
+                <h3>Nutritional Information (per serving, approximately):</h3>
+                <ul>
+                    <li>Calories: 350 - 400</li>
+                    <li>Total Fat: 15g - 20g</li>
+                    <li>Carbohydrates: 50g - 60g</li>
+                    <li>Protein: 5g - 8g</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+    <!-- Vanilla Cake Modal -->
+    <div class="modal" id="cake6" onclick="if(event.target==cake6){hide('cake6');}">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="hide('cake6')">&times;</span>
+            <div class="product"><img src="/images/vanilla_cake.png" alt="vanilla cake"></div> 
+            <div class="product_info">
+                <h2>Vanilla Cake</h2>
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>Flour</li>
+                    <li>Baking Powder</li>
+                    <li>Butter</li>
+                    <li>Sugar</li>
+                    <li>Eggs</li>
+                    <li>Vanilla Extract</li>
+                    <li>Milk</li>
+                </ul>
+                <h3>Nutritional Information (per serving, approximately):</h3>
+                <ul>
+                    <li>Calories: 300 - 350</li>
+                    <li>Total Fat: 12g - 15g</li>
+                    <li>Carbohydrates: 40g - 50g</li>
+                    <li>Protein: 4g - 6g</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+    <!-- Caramel Cheesecake Modal -->
+    <div class="modal" id="cake7" onclick="if(event.target==cake7){hide('cake7');}">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="hide('cake7')">&times;</span>
+            <div class="product"><img src="/images/caramel_cheesecake.png" alt="caramel cheesecake"></div> 
+            <div class="product_info">
+                <h2>Caramel Cheesecake</h2>
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>Biscuits</li>
+                    <li>Cream Cheese</li>
+                    <li>Unsalted Butter</li>
+                    <li>Sugar</li>
+                    <li>Eggs</li>
+                    <li>Vanilla Extract</li>
+                    <li>Caramel Sauce</li>
+                    <li>Caramel Pieces</li>
+                </ul>
+                <h3>Nutritional Information (per slice, based on 12 servings):</h3>
+                <ul>
+                    <li>Calories: 500 - 550</li>
+                    <li>Total Fat: 36g - 40g</li>
+                    <li>Carbohydrates: 40g - 45g</li>
+                    <li>Protein: 8g - 10g</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+    <!-- Strawberry Cheesecake Modal -->
+    <div class="modal" id="cake8" onclick="if(event.target==cake8){hide('cake8');}">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="hide('cake8')">&times;</span>
+            <div class="product"><img src="/images/strawberry_cheesecake.png" alt="strawberry cheesecake"></div> 
+            <div class="product_info">
+                <h2>Strawberry Cheesecake</h2>
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>Biscuits</li>
+                    <li>Cream Cheese</li>
+                    <li>Unsalted Butter</li>
+                    <li>Sugar</li>
+                    <li>Eggs</li>
+                    <li>Vanilla Extract</li>
+                    <li>Strawberries</li>
+                </ul>
+                <h3>Nutritional Values (per slice, based on 12 servings):</h3>
+                <ul>
+                    <li>Calories: 450 - 500</li>
+                    <li>Total Fat: 30g - 34g</li>
+                    <li>Carbohydrates: 40g - 45g</li>
+                    <li>Protein: 7g - 9g</li>
+                </ul>
+            </div>
+        </div>
+        </div>
 
     <!-- Drinks Section -->
     <div id="drinks">
@@ -139,57 +646,245 @@
             <div class="drinks-items">
                 <img src="/images/cappuccino.png" alt="cappuccino">
                 <h3>Cappuccino</h3>
-                <p>Price: £5</p>
-                <button>Info</button>
+                <p>Price: £6.50</p>
+                <button type="button" onclick="show('drink1')">Info</button>
             </div>
             <div class="drinks-items">
                 <img src="/images/chaiTeaLatte.png" alt="chai tea latte">
                 <h3>Chai Tea Latte</h3>
-                <p>Price: £5</p>
-                <button>Info</button>
+                <p>Price: £5.50</p>
+                <button type="button" onclick="show('drink2')">Info</button>
             </div>
             <div class="drinks-items">
                 <img src="/images/latte.png" alt="latte">
                 <h3>Chocolate Latte</h3>
-                <p>Price: £5</p>
-                <button>Info</button>
+                <p>Price: £6.50</p>
+                <button type="button" onclick="show('drink3')">Info</button>
             </div>
             <div class="drinks-items">
                 <img src="/images/matcha_frappuccino.png" alt="matcha frappuccino">
                 <h3>Matcha Green Tea Frappuccino</h3>
-                <p>Price: £5</p>
-                <button>Info</button>
+                <p>Price: £4.80</p>
+                <button type="button" onclick="show('drink4')">Info</button>
             </div>
             <div class="drinks-items">
                 <img src="/images/mocha.png" alt="mocha">
                 <h3>Mocha</h3>
-                <p>Price: £5</p>
-                <button>Info</button>
+                <p>Price: £5.30</p>
+                <button type="button" onclick="show('drink5')">Info</button>
             </div>
             <div class="drinks-items">
                 <img src="/images/oreo_frappuccino.png" alt="oreo frappuccino">
                 <h3>Oreo Frappuccino</h3>
-                <p>Price: £5</p>
-                <button>Info</button>
+                <p>Price: £6.50</p>
+                <button type="button" onclick="show('drink6')">Info</button>
             </div>
             <div class="drinks-items">
                 <img src="/images/strawberry_frappuccino.png" alt="strawberry frappuccino">
                 <h3>Strawberry Frappuccino</h3>
-                <p>Price: £5</p>
-                <button>Info</button>
+                <p>Price: £6.50</p>
+                <button type="button" onclick="show('drink7')">Info</button>
             </div>
             <div class="drinks-items">
                 <img src="/images/hot_chocolate.png" alt="hot chocolate">
                 <h3>Hot Chocolate</h3>
-                <p>Price: £5</p>
-                <button>Info</button>
+                <p>Price: £4.50</p>
+                <button type="button" onclick="show('drink8')">Info</button>
             </div>
         </div>
     </div>
+
+     <!-- Cappuccino Modal -->
+     <div class="modal" id="drink1" onclick="if(event.target==drink1){hide('drink1');}">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="hide('drink1')">&times;</span>
+            <div class="product"><img src="/images/cappuccino.png" alt="cappuccino"></div> 
+            <div class="product_info">
+                <h2>Cappuccino</h2>
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>Espresso</li>
+                    <li>Steamed Milk</li>
+                    <li>Milk Foam</li>
+                </ul>
+                <h3>Calories (8 oz/240 ml):</h3>
+                <ul>
+                    <li> 70-100 calories</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+    <!-- Chai Tea Latte Modal -->
+    <div class="modal" id="drink2" onclick="if(event.target==drink2){hide('drink2');}">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="hide('drink2')">&times;</span>
+            <div class="product"><img src="/images/chaiTeaLatte.png" alt="chai tea latte"></div> 
+            <div class="product_info">
+                <h2>Chai Tea Latte</h2>
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>Chai Tea Concentrate</li>
+                    <li>Steamed Milk</li>
+                    <li>Sweetener</li>
+                </ul>
+                <h3>Calories (8 oz/240 ml):</h3>
+                <ul>
+                    <li> 120 - 180 calories</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+    <!-- Chocolate Latte Modal -->
+    <div class="modal" id="drink3" onclick="if(event.target==drink3){hide('drink3');}">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="hide('drink3')">&times;</span>
+            <div class="product"><img src="/images/latte.png" alt="chocolate latte"></div> 
+            <div class="product_info">
+                <h2>Chocolate Latte</h2>
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>Espresso</li>
+                    <li>Steamed Milk</li>
+                    <li>Chocolate Syrup</li>
+                    <li>Melted Chocolate</li>
+                    <li>Optional: whipped cream and chocolate shavings for garnish</li>
+                </ul>
+                <h3>Calories (8 oz/240 ml):</h3>
+                <ul>
+                    <li> 150 - 200 calories</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+    <!-- Matcha Green Tea Frappuccino Modal -->
+    <div class="modal" id="drink4" onclick="if(event.target==drink4){hide('drink4');}">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="hide('drink4')">&times;</span>
+            <div class="product"><img src="/images/matcha_frappuccino.png" alt="matcha green tea frappuccino"></div> 
+            <div class="product_info">
+                <h2>Matcha Green Tea Frappuccino</h2>
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>Matcha Green Tea Powder</li>
+                    <li>Milk</li>
+                    <li>Ice</li>
+                    <li>Sugar</li>
+                    <li>Optional: Whipped Cream</li>
+                </ul>
+                <h3>Calories (8 oz/240 ml):</h3>
+                <ul>
+                    <li> 100 - 150 calories</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+    <!-- Mocha Modal -->
+    <div class="modal" id="drink5" onclick="if(event.target==drink5){hide('drink5');}">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="hide('drink5')">&times;</span>
+            <div class="product"><img src="/images/mocha.png" alt="mocha"></div> 
+            <div class="product_info">
+                <h2>Mocha</h2>
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>Espresso</li>
+                    <li>Steamed Milk</li>
+                    <li>Chocolate Syrup</li>
+                    <li>Optional: Whipped Cream</li>
+                </ul>
+                <h3>Calories (8 oz/240 ml):</h3>
+                <ul>
+                    <li> 200 - 300 calories</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+    <!-- Oreo Frappuccino Modal -->
+    <div class="modal" id="drink6" onclick="if(event.target==drink6){hide('drink6');}">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="hide('drink6')">&times;</span>
+            <div class="product"><img src="/images/oreo_frappuccino.png" alt="oreo frappuccino"></div> 
+            <div class="product_info">
+                <h2>Oreo Frappuccino</h2>
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>Milk</li>
+                    <li>Ice</li>
+                    <li>Oreo Cookies</li>
+                    <li>Optional: Whipped Cream and crushed oreo for toppings</li>
+                </ul>
+                <h3>Calories (8 oz/240 ml):</h3>
+                <ul>
+                    <li> 200 - 250 calories</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+    <!-- Strawberry Frappuccino Modal -->
+    <div class="modal" id="drink7" onclick="if(event.target==drink7){hide('drink7');}">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="hide('drink7')">&times;</span>
+            <div class="product"><img src="/images/strawberry_frappuccino.png" alt="strawberry frappuccino"></div> 
+            <div class="product_info">
+                <h2>Strawberry Frappuccino</h2>
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>Ice</li>
+                    <li>Milk</li>
+                    <li>Frozen Strawberries</li>
+                    <li>Sugar</li>
+                    <li>Optional: whipped cream and strawberry syrup for topping</li>
+                </ul>
+                <h3>Calories (8 oz/240 ml):</h3>
+                <ul>
+                    <li> 150 - 200 calories</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+    <!-- Hot Chocolate Modal -->
+    <div class="modal" id="drink8" onclick="if(event.target==drink8){hide('drink8');}">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="hide('drink8')">&times;</span>
+            <div class="product"><img src="/images/hot_chocolate.png" alt="hot chocolate"></div> 
+            <div class="product_info">
+                <h2>Hot Chocolate</h2>
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>ECocoa Powder</li>
+                    <li>Milk</li>
+                    <li>Sugar</li>
+                    <li>Optional: whipped cream and chocolate shavings for topping</li>
+                </ul>
+                <h3>Calories (8 oz/240 ml):</h3>
+                <ul>
+                    <li> 150 - 200 calories</li>
+                </ul>
+            </div>
+        </div>
+        </div>
 
     <!-- Footer -->
     <div class="footer">
         <h4>Treats 2023 (Created by Sherah Israel)</h4>
     </div>
+
+    <script type="text/javaScript" src="/JS/functions.js"></script>
+
 </body>
 </html>
