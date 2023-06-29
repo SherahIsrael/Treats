@@ -60,7 +60,7 @@ h3 {
 
 /* title */
 .title {
-    background-image: url(/images/menu.png);
+    background-image: url(images/menu.png);
     background-size: contain;
     background-position: center;
     width: 50%;
